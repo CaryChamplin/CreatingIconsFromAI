@@ -41,6 +41,7 @@ function main() {
             {"name": "ipad-icon-40@2x",    "size":80},
             {"name": "ipad-icon-29",       "size":29},
             {"name": "ipad-icon-29@2x",    "size":58},
+            {"name": "ipad-icon-pro@2x",   "size":167},
             {"name": "iTunesArtwork",      "size":512},
             {"name": "iTunesArtwork@2x",   "size":1024}
         ];
