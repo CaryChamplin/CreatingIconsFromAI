@@ -10,7 +10,7 @@ function main() {
     var afile = document.fullName;
     var filename = afile.name.split('.')[0];
 
-    var folder = afile.parent.selectDlg("Export as CSS Layers (images only)...");
+    var folder = afile.parent.selectDlg("Select folder to export png files.");
 
     if(folder != null)
     {
