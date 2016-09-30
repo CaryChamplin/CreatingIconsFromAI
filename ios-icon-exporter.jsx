@@ -1,5 +1,5 @@
-#target Illustrator
-
+//iOS icon export script for Adobe Illustrator
+//
 if (app.documents.length > 0) {
     main();
 }
@@ -12,7 +12,7 @@ function main() {
 
     var folder = afile.parent.selectDlg("Select folder to export png files.");
 
-    if(folder != null)
+    if(folder !== null)
     {
         var activeABidx = document.artboards.getActiveArtboardIndex();
         var activeAB = document.artboards[activeABidx]; // get active AB
