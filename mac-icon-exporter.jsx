@@ -28,17 +28,16 @@ function main() {
 
         // mac os icon family
         var icons = [
-            {"name": "mac-16",               "size":16},
-            {"name": "mac-16@2x",            "size":32},
-            {"name": "mac-32",               "size":32},
-            {"name": "mac-32@2x",            "size":64},
-            {"name": "mac-128",              "size":128},
-            {"name": "mac-128@2x",           "size":256},
-            {"name": "mac-256",              "size":256},
-            {"name": "mac-256@2x",           "size":512},
-            {"name": "mac-512",              "size":512},
-            {"name": "mac-512@2x",           "size":1024},
-            {"name": "iTunesArtwork-512@2x", "size":1024}
+            {"name": "mac-16",               "size":  16},
+            {"name": "mac-16@2x",            "size":  32},
+            {"name": "mac-32",               "size":  32},
+            {"name": "mac-32@2x",            "size":  64},
+            {"name": "mac-128",              "size": 128},
+            {"name": "mac-128@2x",           "size": 256},
+            {"name": "mac-256",              "size": 256},
+            {"name": "mac-256@2x",           "size": 512},
+            {"name": "mac-512",              "size": 512},
+            {"name": "mac-512@2x",           "size":1024}
         ];
 
         var icon, file;

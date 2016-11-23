@@ -28,16 +28,20 @@ function main() {
 
         // iPhone and iPad icon families
         var icons = [
-            {"name": "iphone-60@3x",         "size":180},
-            {"name": "iphone-60@2x",         "size":120},
-            {"name": "iphone-40@3x",         "size":120},
-            {"name": "iphone-40@2x",         "size":80},
-            {"name": "iphone-29@3x",         "size":87},
-            {"name": "iphone-29@2x",         "size":58},
-            {"name": "ipad-83.5@2x",         "size":167},
-            {"name": "ipad-76@2x",           "size":152},
-            {"name": "ipad-40@2x",           "size":80},
-            {"name": "ipad-29@2x",           "size":58},
+            {"name": "iphone-29@2x",         "size":  58},
+            {"name": "iphone-29@3x",         "size":  87},
+            {"name": "iphone-40@2x",         "size":  80},
+            {"name": "iphone-40@3x",         "size": 120},
+            {"name": "iphone-60@2x",         "size": 120},
+            {"name": "iphone-60@3x",         "size": 180},
+            {"name": "ipad-29",              "size":  29},
+            {"name": "ipad-29@2x",           "size":  58},
+            {"name": "ipad-40"   ,           "size":  40},
+            {"name": "ipad-40@2x",           "size":  80},
+            {"name": "ipad-76",              "size":  76},
+            {"name": "ipad-76@2x",           "size": 152},
+            {"name": "ipad-83.5@2x",         "size": 167},
+            {"name": "iTunesArtwork-512",    "size": 512},
             {"name": "iTunesArtwork-512@2x", "size":1024}
         ];
 
