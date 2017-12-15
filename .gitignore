@@ -6,8 +6,6 @@
 *.mode1v3
 *.mode2v3
 
-*.xcodeproj/xcuserdata/*.xcuserdatad
-
 *.xccheckout
 *.xcuserdatad
 
@@ -15,6 +13,7 @@
 *.hmap
 *.xcuserstate
 
+*.xcodeproj/xcuserdata/*.xcuserdatad
 
 # Exclude personal Xcode user settings
 xcuserdata/
