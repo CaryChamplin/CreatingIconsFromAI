@@ -1,5 +1,23 @@
-//iOS icon export script for Adobe Illustrator
+//=============================================================================
+// Illustrator script to create iPhone and iPad icons from an AI file.
+//-----------------------------------------------------------------------------
+// Steps:
+// 1) Save the file 'ios-icon-exporter.jsx' file to the following folder:
+//    - default location for scripts within Illustrator
+//    - following folder path assumes MacOS and Adobe Illustrator 2018
+//    	/Applications/Adobe Illustrator CC 2018/Presets/en_US/Scripts/
 //
+// 2) With an AI file opened in Illustrator
+//    -	select File > Scripts > ios-icon-exporter
+//    - when prompted, select the destination folder for saving the icon files
+//-----------------------------------------------------------------------------
+// References:
+//  Adobe Photoshop JavaScript Reference
+//    http://www.adobe.com/devnet/illustrator/scripting.html
+//  Apple iOS Human Interface Guidelines
+//    https://developer.apple.com/ios/human-interface-guidelines/
+//=============================================================================
+
 if (app.documents.length > 0) {
     main();
 }
@@ -10,7 +28,8 @@ function main() {
     var afile = document.fullName;
     var filename = afile.name.split('.')[0];
 
-    var folder = afile.parent.selectDlg("Select folder to export png files.");
+    // Prompt user to select output folder for icons. Clicking "Cancel" returns null.
+    var folder = afile.parent.selectDlg("Select folder to export png icon files.");
 
     if(folder !== null)
     {
@@ -28,21 +47,26 @@ function main() {
 
         // iPhone and iPad icon families
         var icons = [
-            {"name": "iphone-29@2x",         "size":  58},
-            {"name": "iphone-29@3x",         "size":  87},
-            {"name": "iphone-40@2x",         "size":  80},
-            {"name": "iphone-40@3x",         "size": 120},
-            {"name": "iphone-60@2x",         "size": 120},
-            {"name": "iphone-60@3x",         "size": 180},
-            {"name": "ipad-29",              "size":  29},
-            {"name": "ipad-29@2x",           "size":  58},
-            {"name": "ipad-40"   ,           "size":  40},
-            {"name": "ipad-40@2x",           "size":  80},
-            {"name": "ipad-76",              "size":  76},
-            {"name": "ipad-76@2x",           "size": 152},
-            {"name": "ipad-83.5@2x",         "size": 167},
-            {"name": "iTunesArtwork-512",    "size": 512},
-            {"name": "iTunesArtwork-512@2x", "size":1024}
+          {"name": "AppStoreiOS_1024",     "size":1024},
+     
+          {"name": "iPad_20",              "size":20},
+          {"name": "iPad_20@2x",           "size":20*2},
+          {"name": "iPad_29",              "size":29},
+          {"name": "iPad_29@2x",           "size":29*2},
+          {"name": "iPad_40",              "size":40},
+          {"name": "iPad_40@2x",           "size":40*2},
+          {"name": "iPad_76",              "size":76},
+          {"name": "iPad_76@2x",           "size":76*2},
+          {"name": "iPad_83.5@2x",         "size":83.5*2},
+     
+          {"name": "iPhone_20@2x",         "size":20*2},
+          {"name": "iPhone_20@3x",         "size":20*3},
+          {"name": "iPhone_29@2x",         "size":29*2},
+          {"name": "iPhone_29@3x",         "size":29*3},
+          {"name": "iPhone_40@2x",         "size":40*2},
+          {"name": "iPhone_40@3x",         "size":40*3},
+          {"name": "iPhone_60@2x",         "size":60*2},
+          {"name": "iPhone_60@3x",         "size":60*3}
         ];
 
         var icon, file;
@@ -59,5 +83,8 @@ function main() {
         }
 
         activeAB.artboardRect = abBounds;
+        
+        alert("Icons have been created and saved.");
+
     }
 }
