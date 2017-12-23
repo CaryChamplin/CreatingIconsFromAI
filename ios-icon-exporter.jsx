@@ -14,6 +14,7 @@
 // References:
 //  Adobe Photoshop JavaScript Reference
 //    http://www.adobe.com/devnet/illustrator/scripting.html
+//    http://wwwimages.adobe.com/content/dam/acom/en/devnet/illustrator/pdf/Illustrator_JavaScript_Scripting_Reference_2017.pdf
 //  Apple iOS Human Interface Guidelines
 //    https://developer.apple.com/ios/human-interface-guidelines/
 //=============================================================================
@@ -48,7 +49,7 @@ function main() {
         // iPhone and iPad icon families
         var icons = [
           {"name": "AppStoreiOS_1024",     "size":1024},
-     
+
           {"name": "iPad_20",              "size":20},
           {"name": "iPad_20@2x",           "size":20*2},
           {"name": "iPad_29",              "size":29},
@@ -58,7 +59,7 @@ function main() {
           {"name": "iPad_76",              "size":76},
           {"name": "iPad_76@2x",           "size":76*2},
           {"name": "iPad_83.5@2x",         "size":83.5*2},
-     
+
           {"name": "iPhone_20@2x",         "size":20*2},
           {"name": "iPhone_20@3x",         "size":20*3},
           {"name": "iPhone_29@2x",         "size":29*2},
@@ -83,7 +84,7 @@ function main() {
         }
 
         activeAB.artboardRect = abBounds;
-        
+
         alert("Icons have been created and saved.");
 
     }
